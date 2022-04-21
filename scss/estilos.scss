@@ -1,0 +1,127 @@
+//variables
+@import "utilities/variables";
+
+body {
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+.grid-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "main main main"}
+
+        /*estilos header index*/
+        .header{
+            grid-area: header;
+            width: 100%;
+            .parrafo-uno{
+                margin: $margin-parrafos;
+                font-size: $fuente-parrafo;
+            }
+            .parrafo-dos{
+                margin: $margin-parrafos;
+                font-size: $fuente-parrafo;
+            }
+        }
+
+        /*estilos main index*/
+        .main{
+            grid-area: main;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            div{
+                a{
+                    color: black;
+                    text-decoration: none;
+                    img{
+                        margin-top: 2em;
+                        border: $bordes;
+                        width: $width-imagenes;
+                        height: $height-imagenes;
+                    }
+                    h2{
+                        text-align: $centrado;
+                        font-size: 1.5em;
+                    }
+                }   
+            }
+        }
+
+/*estilos de navbar general*/
+
+nav{
+    background-color: $color-principal;
+    border-bottom: $bordes-inferiores;
+    .navbar-brand{
+        margin: 1em;
+        font-size: 1.4em;
+        font-weight: bold;
+        }
+        .navbar-brand:hover{
+            transform: scale(1.2);
+          }
+    .nav-item{
+    font-weight: bold;
+    padding: 0.5em;
+    }
+    .nav-item:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+}
+
+/*titulos generales*/
+h1{
+    text-align: $centrado;
+    margin: $margenes;
+}
+
+/*nosotros*/
+
+main{
+    .main-nosotros{
+        text-align: $centrado;
+        img{
+            border: $bordes;
+        }
+    }
+    .div-nosotros{
+        display: flex;
+        padding: 1em;
+        margin: $margin-parrafos;
+    }
+}
+
+/*productos*/
+.main-productos{
+    text-align: $centrado;
+    div{
+        margin-bottom: 3em;
+        img{
+            border: $bordes;
+            width: $width-imagenes;
+            height: $height-imagenes;
+        }
+    }
+}
+
+/*footer*/
+.footer{ 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: $bordes-superiores;
+    background-color: $color-principal;
+    height: 3.5em;
+    p{
+        text-align: $centrado;
+        margin: $margenes;
+        font-weight: bold;
+    }
+}

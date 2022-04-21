@@ -1,0 +1,33 @@
+/*fuente general*/
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+//colores
+$color-principal: #D1A5FA;
+
+$color-secundario: #A341FF;
+
+//centrado
+$centrado: center;
+
+//margenes
+$margenes: 1em;
+
+$margin-parrafos: 2.5em;
+
+//fuente
+$fuente-parrafo: 1em;
+
+//bordes
+$bordes: 2px solid black;
+
+$bordes-inferiores: 2px solid $color-secundario;
+
+$bordes-superiores: 2px solid $color-secundario;
+
+//img's
+$width-imagenes: 350px;
+
+$height-imagenes: 350px;
+
